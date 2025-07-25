@@ -1,0 +1,49 @@
+Overview
+
+FakeSMTP is a Free Fake SMTP Server with GUI for testing emails in applications easily. It is written in Java.
+Configure your application to use "localhost" as your SMTP server, and all emails will be intercepted and displayed in this software.
+
+Screenshot
+FakeSMTP uses SubEtha SMTP: an easy-to-use server-side SMTP library for Java.
+FakeSMTP is free to use for commercial and non-commercial projects and the source code is provided.
+It is licensed under the very free BSD or GPL license, whichever you prefer.
+
+Requirements
+
+You need Java JVM 1.6 or newer installed on your machine.
+If you are on a "Unix-like" machine (Mac, GNU/Linux, BSD...), you may have to be "root" to start the port 25, otherwise, try another port >= 1024.
+
+Usage
+
+The fakeSMTP.jar is auto-executable.
+If your desktop environment supports it, you can directly double click on the .jar file.
+Otherwise, run the following command:
+
+ java -jar fakeSMTP.jar
+If you want to specify the directory where emails will be saved when starting the application,
+you can use the -o argument:
+
+ java -jar fakeSMTP.jar -o output_directory_name
+You can also start the SMTP server automatically at launch (-s argument) on a different port (-p argument) with no gui (-b argument),
+the following example will autostart the SMTP server on the port 2525 and bound to the loopback address (-a argument):
+
+ java -jar fakeSMTP.jar -s -b -p 2525 -a 127.0.0.1
+If you don't need to save emails on the filesystem (to improve the overall performances), you can use the `-m` (memory mode) argument:
+
+ java -jar fakeSMTP-VERSION.jar -m
+To see the available options (relay domains, custom eml-viewer...), run:
+
+ java -jar fakeSMTP.jar --help
+Alternatives
+
+FakeSMTP was created because we couldn't find any free (as in freedom) and cross-platform SMTP server with GUI for testing emails in applications or websites.
+Listed below are some greats alternatives to Fake SMTP:
+
+SMTP4dev
+Nice features;
+Open source;
+Written for Windows in .net.
+DevNull SMTP
+Lightweight;
+Closed source;
+Written in Java 1.4 (cross platform).

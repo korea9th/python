@@ -1,0 +1,135 @@
+
+<html>
+    <head>       
+        <style>          
+
+          html { background:transparent; }
+<!--
+          div#buttons {
+            flow: grid( 1  1  1  1,
+                        2  2  3  3);  
+            border-spacing:10dip; 
+            size:*;            
+          }
+
+          div#buttons > * {
+            display:block;
+            size:*;
+            min-height: 2em;
+            font-size: 4vh;
+          }
+
+          div#textareas > * {
+            display:block;
+            size:*;
+            min-height: 2em;
+            font-size: 2vh;
+          }
+        -->          
+        </style>
+    </head>
+    <body>
+	<!--
+         <button type="button">01</button>
+         <button type="button">02</button>
+         <button type="button">03</button>
+         <button type="button">04</button>
+			<input type="text" id="lname" name="lname"><br><br>
+			<button type="submit">Submit</button>
+            <button type="submit" formmethod="post">Submit using POST</button>
+			<label for="myFile">Select a file:</label>
+			<input type="file" id="myFile" name="myFile">
+-->
+<!--form action="/upload" method="POST" enctype="multipart/form-data"--> 
+<form action="/" method="POST" enctype="multipart/form-data"> 
+    Select a file: <input name="myFile" type="file"> 
+    <input name="submit" type="submit"> 
+</form> 
+
+	<button type="button" onclick="location.href='list.html' ">01</button>
+
+			
+
+       
+        <!-- Textarea to get input from user-->
+        
+        <!--textarea cols="80" rows="10" #data></textarea-->
+
+        <script type="text/tiscript">
+       
+//            $(#machine).text = view.getHostName();
+//            var hname = view.getHostName("aa");
+
+//            self#input.text = hname;
+/*
+            var root = view.root;      
+            
+            function callback(abc){
+                self#data.text = self#data.text + abc;
+//                self#return_text = self#data.text + abc;
+                
+            }
+
+            event click $(button.op) {  
+              self#prev.text="" 
+//              self#input.text= view.Operate(self#input.text)                  
+              self#input.text, _= view.getCounts(self#input.text)                  
+            }
+
+            event click $(button.btn)
+            {                       
+              if (this.text == "+" || this.text == "-"  
+               || this.text == "*" || this.text == "/" ) {     
+                  if (self#prev.text != "y"){                
+                    self#prev.text="y"                   
+                  }else{                                     
+                    self#input.text= view.Operate(self#input.text)                                
+//                    self#input.text, _= view.getCounts(self#input.text)                  
+                  }                        
+              }
+              self#input.text = self#input.text + this.text; 
+                         
+            }
+
+            event click $(button.run)
+            {                       
+              self#input.text = view.getCounts(callback)//self#input.text)                  
+//              self#input.text = self#input.text + this.text; 
+            }
+            
+            event click $(button.runHash)
+            {                       
+              self#input.text = view.runHash(self#input.text)//self#input.text)                  
+//              self#return_text = view.runHash(self#input.text)//self#input.text)                  
+              
+
+            }
+            
+            event click $(button.open)
+            {
+                self#input.text = "selected file: ";
+
+                var fn = view.selectFile(#open, "HTML Files (*.htm,*.html)|*.HTM;*.HTML|All Files (*.*)|*.*" , "html");
+//                var fn = view.selectFile(#open);
+
+
+                stdout.println("selected file: " + fn);
+                if (fn) {
+                    $(body).$append(<h1#test>{fn}</h1>);
+                }
+
+                self#input.text = self#input.text +  "???: " + fn;
+              
+            }
+            event click $(button.test) {
+                var r = view.selectFile(#open,"html files|*.html;*htm", "htm", "c:\\02.dev");
+                stdout.println(r);
+            }
+*/            
+        </script>
+
+
+    <!--h1>Minimal Sciter Application</h1>
+    <p>Running on <em #machine /> machine</p-->
+    </body>
+</html>
