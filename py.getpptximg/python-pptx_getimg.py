@@ -11,6 +11,7 @@ def extract_images_from_pptx(fullname, filename):
     # 프레젠테이션 불러오기
     prs = Presentation(fullname)
     image_count = 0
+    total_image_count = 0
    
     # 각 슬라이드 순회
     for slide_idx, slide in enumerate(prs.slides):
@@ -34,11 +35,12 @@ def extract_images_from_pptx(fullname, filename):
                     
 #                    print(f"저장 완료: {image_filename}")
                     image_count += 1
+                    total_image_count += 1
                     
                 except Exception as e:
                     print(f"이미지 추출 실패: {e}")
 
-    print(f"총 {image_count}개의 이미지가 '{filename}' 폴더에 저장되었습니다.")
+    print(f"총 {total_image_count}개의 이미지가 '{filename}' 폴더에 저장되었습니다.")
 
 # 사용 예시
 #extract_images_from_pptx("T_INS.1 LogCops V6.0 설치 및 시동 시험.pptx", "extracted_images")
@@ -59,4 +61,4 @@ def search(dirname):
 
 
 
-search("C:\\02.dev\\getpptximg\\pptx")
+search("C:\\0002.dev\\01.python\\getpptximg\\pptx")
